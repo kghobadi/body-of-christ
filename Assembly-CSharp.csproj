@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\General\LookAtCamera.cs" />
     <Compile Include="Assets\Scripts\General\MoveTowards.cs" />
     <Compile Include="Assets\Scripts\General\ResetNearbyAudioSources.cs" />
+    <Compile Include="Assets\Scripts\Lighting\ExpandSpotlight.cs" />
     <Compile Include="Assets\Scripts\Monologues\AnimateDialogue.cs" />
     <Compile Include="Assets\Scripts\Monologues\Monologue.cs" />
     <Compile Include="Assets\Scripts\Monologues\MonologueManager.cs" />
@@ -89,6 +90,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Monologues\Narrators Intro.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
@@ -103,6 +105,9 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <Reference Include="Cinemachine">
+      <HintPath>C:/2020/Unity Projects/body-of-christ/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/2020/Unity Projects/body-of-christ/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -112,17 +117,14 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/2020/Unity Projects/body-of-christ/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/2020/Unity Projects/body-of-christ/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/2020/Unity Projects/body-of-christ/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>C:/2020/Unity Projects/body-of-christ/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>C:/2020/Unity Projects/body-of-christ/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>C:/2020/Unity Projects/body-of-christ/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/UnityEditors/2018.4.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
