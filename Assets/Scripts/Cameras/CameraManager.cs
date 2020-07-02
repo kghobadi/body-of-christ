@@ -17,6 +17,7 @@ using UnityEngine;
         public GameCamera defaultCamera;
         public GameCamera previousCamera, currentCamera;
 
+        [Header("Shifting")]
         public float shiftDistance;
         public LayerMask shiftable;
 
@@ -53,7 +54,8 @@ using UnityEngine;
             camera.gameObject.SetActive(true);
 
             //fadeout 
-            camera.shiftUI.FadeOut();
+            if(camera.shiftUI)
+                camera.shiftUI.FadeOut();
 
             //set as current camera 
             currentCamera = camera;

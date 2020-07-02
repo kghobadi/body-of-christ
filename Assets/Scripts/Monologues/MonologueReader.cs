@@ -70,7 +70,7 @@ public class MonologueReader : MonoBehaviour {
         if (isTyping)
         {
             //player skips to the end of the line
-            if ((Input.GetKeyDown(KeyCode.Space) ) && canSkip)
+            if (Input.GetMouseButtonDown(0) && canSkip)
             {
                 if (currentTypingLine != null)
                 {
@@ -89,7 +89,7 @@ public class MonologueReader : MonoBehaviour {
         if (waiting)
         {
             //player skips to next line
-            if ((Input.GetKeyDown(KeyCode.Space) ) && canSkip)
+            if (Input.GetMouseButtonDown(0) && canSkip)
             {
                 if (waitForNextLine != null)
                 {
