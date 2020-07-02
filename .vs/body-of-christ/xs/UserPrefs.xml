@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{4DE2F9D6-EA50-1E23-5798-DE1731D7029E}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/easton's buls/MouseControlLight.cs">
+    <Files>
+      <File FileName="Assets/Shaders/ColorToonShader.shader" Line="92" Column="74" />
+      <File FileName="Assets/Shaders/LightingThreshold.shader" Line="30" Column="59" />
+      <File FileName="Assets/Scripts/easton's buls/MouseControlLight.cs" Line="33" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
