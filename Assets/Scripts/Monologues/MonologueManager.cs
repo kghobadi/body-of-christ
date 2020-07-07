@@ -215,17 +215,28 @@ public class MonologueManager : MonoBehaviour
         if (mono.triggersMonologues)
         {
             //enable the monologues but wait to make them usable to player 
-            for(int i = 0; i< mono.monologueIndeces.Length; i++)
+            for(int i = 0; i< mono.monologueTriggerIndeces.Length; i++)
             {
-                MonologueTrigger mTrigger = wmManager.allMonologues[mono.monologueIndeces[i]].mTrigger;
+                MonologueTrigger mTrigger = wmManager.allMonologues[mono.monologueTriggerIndeces[i]].mTrigger;
                 mTrigger.gameObject.SetActive(true);
                 mTrigger.hasActivated = true;
                 mTrigger.WaitToReset(mono.monologueWaits[i]);
             }
+
+            //loop thru other managers to activate
+            for (int i = 0; i < mono.monologueManagerIndeces.Length; i++)
+            {
+                //get manager
+                MonologueManager otherMonoManager = wmManager.allMonoManagers[mono.monologueManagerIndeces[i]];
+                //set manager to new monologue from within its list
+                otherMonoManager.SetMonologueSystem(mono.monologueIndecesWithinManager[i]);
+                //enable it?
+                otherMonoManager.EnableMonologue();
+            }
         }
 
         //advance scene 
-        if (mono.advancesScene)
+        if (mono.loadsScene)
             scener.LoadNextScene();
 
 

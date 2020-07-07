@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\General\MoveTowards.cs" />
     <Compile Include="Assets\Scripts\General\ResetNearbyAudioSources.cs" />
     <Compile Include="Assets\Scripts\Lighting\ExpandSpotlight.cs" />
+    <Compile Include="Assets\Scripts\Lighting\RotateLight.cs" />
     <Compile Include="Assets\Scripts\Monologues\AnimateDialogue.cs" />
     <Compile Include="Assets\Scripts\Monologues\Monologue.cs" />
     <Compile Include="Assets\Scripts\Monologues\MonologueManager.cs" />
@@ -86,13 +87,17 @@
     <Compile Include="Assets\Scripts\Monologues\SpeakerAnimations.cs" />
     <Compile Include="Assets\Scripts\Monologues\SpeakerSound.cs" />
     <Compile Include="Assets\Scripts\Monologues\WorldMonologueManager.cs" />
+    <Compile Include="Assets\Scripts\Movement\Animations.cs" />
+    <Compile Include="Assets\Scripts\Movement\NavigateToPoint.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Monologues\Andys Monologue.txt" />
     <None Include="Assets\Monologues\Narrators Intro.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\Monologues\Tom's Opening Line.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
