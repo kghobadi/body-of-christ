@@ -14,6 +14,7 @@ using UnityEngine;
     public class CameraManager : MonoBehaviour
     {
         [HideInInspector] public GameCamera[] cameras;
+        int currentCam;
         public GameCamera defaultCamera;
         public GameCamera previousCamera, currentCamera;
 
@@ -44,7 +45,41 @@ using UnityEngine;
 
         private void Update()
         {
+            ShiftInput();
+
             ShiftReset();
+        }
+
+        void ShiftInput()
+        {
+            if (canShift)
+            {
+                if (Input.GetKeyDown(KeyCode.RightShift))
+                {
+                    if (currentCam < cameras.Length - 1)
+                    {
+                        currentCam++;
+                    }
+                    else
+                    {
+                        currentCam = 0;
+                    }
+                    Set(cameras[currentCam]);
+                }
+
+                if (Input.GetKeyDown(KeyCode.LeftShift))
+                {
+                    if (currentCam > 0)
+                    {
+                        currentCam--;
+                    }
+                    else
+                    {
+                        currentCam = cameras.Length - 1;
+                    }
+                    Set(cameras[currentCam]);
+                }
+            }
         }
 
         //enables as the Player 
@@ -81,7 +116,6 @@ using UnityEngine;
             //shift reset 
             shiftResetTimer = shiftReset;
             canShift = false;
-       
         }
 
         public void Reset()

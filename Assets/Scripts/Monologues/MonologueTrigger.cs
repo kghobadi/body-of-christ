@@ -26,6 +26,8 @@ public class MonologueTrigger : MonoBehaviour
     [Tooltip("Will attach to NPC upon activation")]
     public bool parentToNPC;
     int activationCount = 0;
+
+    public string playerTag = "Player";
     
     //monologues
     [Tooltip("Monologue Managers of the NPCs whose monologues should be activated")]
@@ -57,7 +59,7 @@ public class MonologueTrigger : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == playerTag)
         {
             if (!playerInZone && canActivate)
                 PlayerEnteredZone();
@@ -66,7 +68,7 @@ public class MonologueTrigger : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == playerTag)
         {
             PlayerExitedZone();
         }
