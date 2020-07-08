@@ -60,9 +60,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Ambush\BreathingCountdown.cs" />
+    <Compile Include="Assets\Scripts\Ambush\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Ambush\CharacterAnimator.cs" />
+    <Compile Include="Assets\Scripts\Ambush\Gun.cs" />
+    <Compile Include="Assets\Scripts\Ambush\HandAnimator.cs" />
     <Compile Include="Assets\Scripts\Cameras\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Cameras\GameCamera.cs" />
     <Compile Include="Assets\Scripts\Cameras\GroundCamera.cs" />
+    <Compile Include="Assets\Scripts\Checkpoints\Checkpoint.cs" />
+    <Compile Include="Assets\Scripts\Checkpoints\DebugTime.cs" />
     <Compile Include="Assets\Scripts\Cinematics\Cinematic.cs" />
     <Compile Include="Assets\Scripts\Cinematics\CinematicsManager.cs" />
     <Compile Include="Assets\Scripts\Cinematics\PlayerCutsceneSpeedController.cs" />
@@ -72,10 +79,13 @@
     <Compile Include="Assets\Scripts\General\AdvanceScene.cs" />
     <Compile Include="Assets\Scripts\General\AnimationHandler.cs" />
     <Compile Include="Assets\Scripts\General\AudioHandler.cs" />
+    <Compile Include="Assets\Scripts\General\AudioTrigger.cs" />
     <Compile Include="Assets\Scripts\General\FadeUI.cs" />
     <Compile Include="Assets\Scripts\General\LookAtCamera.cs" />
     <Compile Include="Assets\Scripts\General\MoveTowards.cs" />
+    <Compile Include="Assets\Scripts\General\MusicFader.cs" />
     <Compile Include="Assets\Scripts\General\ResetNearbyAudioSources.cs" />
+    <Compile Include="Assets\Scripts\General\SceneTrigger.cs" />
     <Compile Include="Assets\Scripts\Lighting\ExpandSpotlight.cs" />
     <Compile Include="Assets\Scripts\Lighting\RotateLight.cs" />
     <Compile Include="Assets\Scripts\Monologues\AnimateDialogue.cs" />
@@ -91,6 +101,7 @@
     <Compile Include="Assets\Scripts\Movement\NavigateToPoint.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Monologues\Andy Regarding the Bison.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\Monologues\Andys Monologue.txt" />
@@ -108,6 +119,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Monologues\Tom Questioning Bison.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Cinemachine">

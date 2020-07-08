@@ -39,6 +39,10 @@ public class NavigateToPoint : MonoBehaviour
         {
             NavigateTo(destination.position);
         }
+        else
+        {
+            SetIdle();
+        }
     }
     
     void Update()
