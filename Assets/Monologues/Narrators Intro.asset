@@ -17,17 +17,19 @@ MonoBehaviour:
   waitToStart: 0
   timeUntilStart: 0
   lockPlayer: 1
+  loadsScene: 1
+  timeBetweenLetters: 0.1
+  timeBetweenLines: 3
+  conversational: 0
+  waitTimes: []
   repeatsAtFinish: 0
   condensedMonologue: {fileID: 0}
-  advancesScene: 0
   triggersMonologues: 0
-  monologueIndeces: 
+  monologueManagerIndeces: 
+  monologueIndecesWithinManager: 
+  monologueTriggerIndeces: 
   monologueWaits: []
   playsCinematic: 0
   cinematic: {fileID: 0}
   enablesCinematicTriggers: 0
   cTriggers: []
-  timeBetweenLetters: 0.1
-  timeBetweenLines: 3
-  conversational: 0
-  waitTimes: []

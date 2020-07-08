@@ -19,13 +19,13 @@ MonoBehaviour:
   lockPlayer: 0
   loadsScene: 0
   timeBetweenLetters: 0.075
-  timeBetweenLines: 3
+  timeBetweenLines: 2
   conversational: 0
   waitTimes: []
   repeatsAtFinish: 0
   condensedMonologue: {fileID: 0}
   triggersMonologues: 0
-  monologueManagers: []
+  monologueManagerIndeces: 
   monologueIndecesWithinManager: 
   monologueTriggerIndeces: 
   monologueWaits: []
