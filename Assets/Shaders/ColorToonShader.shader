@@ -47,7 +47,6 @@ Shader "Unlit/ColorToonShader"
                 float2 uv : TEXCOORD0;
                 float3 worldNormal : NORMAL;
                 float3 viewDir : TEXCOORD1;
-                float4 screenPosition : TEXCOORD2;
                 SHADOW_COORDS(2)
                 UNITY_FOG_COORDS(3)
             };
@@ -67,7 +66,6 @@ Shader "Unlit/ColorToonShader"
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 o.worldNormal = UnityObjectToWorldNormal(v.normal);
                 o.viewDir = WorldSpaceViewDir(v.vertex);
-                o.screenPosition = ComputeScreenPos(o.pos);
                 TRANSFER_SHADOW(o)
                 UNITY_TRANSFER_FOG(o,o.pos);
                 return o;

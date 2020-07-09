@@ -58,3 +58,13 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Assets/Textures/easton_playing_substance/dirt_mat_ambientOcclusion.png
+Assets/Textures/easton_playing_substance/dirt_mat_basecolor.png
+Assets/Textures/easton_playing_substance/dirt_mat_height.png
+Assets/Textures/easton_playing_substance/dirt_mat_metallic.png
+Assets/Textures/easton_playing_substance/dirt_mat_normal.png
+Assets/Textures/easton_playing_substance/dirt_mat_roughness.png
+Assets/Textures/easton_playing_substance/glass_ambientOcclusion.png
+Assets/Textures/easton_playing_substance/glass_basecolor.png
+Assets/Textures/easton_playing_substance/glass_height.png
+Assets/Textures/easton_playing_substance/glass_normal.png
