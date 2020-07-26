@@ -23,7 +23,7 @@ public class MouseControlLight : MonoBehaviour
 
         if (Input.GetMouseButton(0))
         {
-            spotAng = Mathf.Lerp(spotAng, 10, Time.deltaTime);
+            spotAng = Mathf.Lerp(spotAng, 0, Time.deltaTime);
         }
         else
         {

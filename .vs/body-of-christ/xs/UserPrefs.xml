@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{4DE2F9D6-EA50-1E23-5798-DE1731D7029E}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Shaders/LightingThreshold.shader">
     <Files>
-      <File FileName="Assets/Shaders/LightingThreshold.shader" Line="70" Column="13" />
+      <File FileName="Assets/Shaders/LightingThreshold.shader" Line="80" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

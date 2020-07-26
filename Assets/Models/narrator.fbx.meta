@@ -15,6 +15,10 @@ ModelImporter:
     100018: pSphere7
     100020: pSphere8
     100022: pSphere9
+    100024: group1
+    100026: pSphere11
+    100028: pSphere12
+    100030: pSphere13
     400000: //RootNode
     400002: pCylinder1
     400004: pSphere1
@@ -27,6 +31,10 @@ ModelImporter:
     400018: pSphere7
     400020: pSphere8
     400022: pSphere9
+    400024: group1
+    400026: pSphere11
+    400028: pSphere12
+    400030: pSphere13
     2100000: lambert1
     2300000: pCylinder1
     2300002: pSphere1
@@ -39,6 +47,9 @@ ModelImporter:
     2300016: pSphere7
     2300018: pSphere8
     2300020: pSphere9
+    2300022: pSphere11
+    2300024: pSphere12
+    2300026: pSphere13
     3300000: pCylinder1
     3300002: pSphere1
     3300004: pSphere10
@@ -50,6 +61,9 @@ ModelImporter:
     3300016: pSphere7
     3300018: pSphere8
     3300020: pSphere9
+    3300022: pSphere11
+    3300024: pSphere12
+    3300026: pSphere13
     4300000: pCylinder1
     4300002: pSphere1
     4300004: pSphere10
@@ -61,6 +75,9 @@ ModelImporter:
     4300016: pSphere7
     4300018: pSphere8
     4300020: pSphere9
+    4300022: pSphere11
+    4300024: pSphere12
+    4300026: pSphere13
   externalObjects: {}
   materials:
     importMaterials: 1
