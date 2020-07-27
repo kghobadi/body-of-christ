@@ -326,15 +326,6 @@
     <Reference Include="UnityEditor.OSXStandalone.Extensions">
       <HintPath>/Applications/2018.4.21f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Substance.Game">
-      <HintPath>/Users/eastonself/Documents/body-of-christ/Assets/Allegorithmic/Plugins/Substance.Game.dll</HintPath>
-    </Reference>
-    <Reference Include="Substance.Editor">
-      <HintPath>/Users/eastonself/Documents/body-of-christ/Assets/Allegorithmic/Plugins/Substance/Substance Engine/Editor/Substance.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="SourceUnityLib">
-      <HintPath>/Users/eastonself/Documents/body-of-christ/Assets/Allegorithmic/Plugins/Substance/Substance Source/Editor/SourceUnityLib.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>/Users/eastonself/Documents/body-of-christ/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>

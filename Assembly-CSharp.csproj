@@ -114,7 +114,6 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\Monologues\Andys Monologue.txt" />
     <None Include="Assets\Monologues\Narrators Intro.txt" />
-    <None Include="Assets\Allegorithmic\Plugins\engine_build_info.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\Monologues\Tom's Opening Line.txt" />
@@ -128,7 +127,6 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\Allegorithmic\Plugins\EULA.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Monologues\Tom Questioning Bison.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
@@ -363,9 +361,6 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>/Applications/2018.4.21f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="Substance.Game">
-      <HintPath>/Users/eastonself/Documents/body-of-christ/Assets/Allegorithmic/Plugins/Substance.Game.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>/Users/eastonself/Documents/body-of-christ/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
@@ -721,17 +716,9 @@
       <Project>{C12AC62E-125A-854C-BE6B-5C61B1F3104D}</Project>
       <Name>Aura2_Core</Name>
     </ProjectReference>
-    <ProjectReference Include="Substance.EditorHelper.csproj">
-      <Project>{B82EF13D-39AA-317C-E356-D84B401FB08B}</Project>
-      <Name>Substance.EditorHelper</Name>
-    </ProjectReference>
     <ProjectReference Include="Aura2_Editor.csproj">
       <Project>{9A0B8873-47CA-D93E-0FED-7E0C2A282C4B}</Project>
       <Name>Aura2_Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Substance.Platform.csproj">
-      <Project>{B34BFDEE-4F66-CF1B-59EF-7AC3D320E801}</Project>
-      <Name>Substance.Platform</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
