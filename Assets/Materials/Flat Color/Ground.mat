@@ -41,15 +41,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 920d831975b714a6c8bc1dd330e57280, type: 3}
-        m_Scale: {x: 50, y: 50}
+        m_Scale: {x: 15, y: 15}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Norm:
-        m_Texture: {fileID: 2800000, guid: 29041ae384d9d488587439db404d484c, type: 3}
-        m_Scale: {x: 0.1, y: 5}
+        m_Texture: {fileID: 2800000, guid: 45d70348c146c48ac87b89c79b4d066f, type: 3}
+        m_Scale: {x: 10, y: 0.003}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -64,7 +64,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SecTex:
-        m_Texture: {fileID: 2800000, guid: b22fa74e427083a42ab9b48db4730131, type: 3}
+        m_Texture: {fileID: 2800000, guid: afcf8000dd1174bd3844f3f924436a67, type: 3}
         m_Scale: {x: 15, y: 15}
         m_Offset: {x: 0, y: 0}
     - _Tex1:
@@ -98,6 +98,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _OutlineWidth: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1

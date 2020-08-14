@@ -89,7 +89,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RimAmount: 0.31
+    - _RimAmount: 0.315
     - _RimThreshold: 0.39
     - _Shininess: 0.42
     - _SmoothnessTextureChannel: 1

@@ -42,6 +42,7 @@ public class RotateLight : MonoBehaviour
             //base y rotation on x dist from ref point
             float rotationYAmount = currentMousePos.x - referencePoint.x;
 
+
             //only rotate when the mouse is moving 
             if(currentMousePos != lastMousePos )
                 transform.Rotate(new Vector3(0, rotationYAmount * rotationSpeed, 0));

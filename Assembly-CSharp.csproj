@@ -66,6 +66,9 @@
     <Compile Include="Assets\Aura 2\Examples\Sources\Scripts\LightFlicker.cs" />
     <Compile Include="Assets\Aura 2\Examples\Sources\Scripts\MoveSinCos.cs" />
     <Compile Include="Assets\Aura 2\Examples\Sources\Scripts\SinRotationOffset.cs" />
+    <Compile Include="Assets\CactusControl.cs" />
+    <Compile Include="Assets\Prefab Brush\Scripts\PB_Enums.cs" />
+    <Compile Include="Assets\Prefab Brush\Scripts\PB_SaveObject.cs" />
     <Compile Include="Assets\Scripts\Ambush\BreathingCountdown.cs" />
     <Compile Include="Assets\Scripts\Ambush\Bullet.cs" />
     <Compile Include="Assets\Scripts\Ambush\CharacterAnimator.cs" />
@@ -112,6 +115,7 @@
     <None Include="Assets\Shaders\ColorToonShader.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Shaders\UV_Vertex_Displacement.shader" />
     <None Include="Assets\Monologues\Andys Monologue.txt" />
     <None Include="Assets\Monologues\Narrators Intro.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
