@@ -18,13 +18,13 @@ public class randomRotation : MonoBehaviour
     {
         if(timer < 0)
         {
-            transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, Random.RandomRange(0, 360), 0);
-            timer = Random.Range(0.5f, 1.5f);
-            speed = Random.Range(-2f, 2f);
+            //transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, Random.RandomRange(0, 360), 0);
+            //timer = Random.Range(0.5f, 1.5f);
+            //speed = Random.Range(-2f, 2f);
         }
 
-        transform.localEulerAngles += new Vector3(0, speed, 0);
+        transform.localEulerAngles += new Vector3(0, Input.GetAxis("Mouse X"), 0);
 
-        timer -= Time.deltaTime;
+        //timer -= Time.deltaTime;
     }
 }
