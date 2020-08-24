@@ -1,23 +1,20 @@
-Base path: /Applications/2018.4.21f1/Unity.app/Contents
+Base path: /Applications/Unity/Hub/Editor/2018.4.21f1/Unity.app/Contents
 Cmd: initializeCompiler
 Cmd: compileComputeKernel
-  api=14 insize=3929 outsize=4701 ok=1
+  api=14 insize=1326 outsize=1413 ok=1
 Cmd: translateComputeKernel
-  api=14 insize=3977 outsize=5177 ok=1
-Cmd: translateComputeKernel
-  api=14 insize=4381 outsize=5853 ok=1
-Cmd: translateComputeKernel
-  api=14 insize=3045 outsize=3609 ok=1
+  api=14 insize=1385 outsize=1537 ok=1
 Cmd: compileComputeKernel
-  api=14 insize=8159 outsize=49013 ok=1
+  error: 1 plat 14 at Sort.compute(218): use of potentially uninitialized variable (GetKeyWithCheck)
+  api=14 insize=9814 outsize=5073 ok=1
 Cmd: translateComputeKernel
-  api=14 insize=50617 outsize=109909 ok=1
+  api=14 insize=5073 outsize=9005 ok=1
 Cmd: compileComputeKernel
-  api=14 insize=2642 outsize=2649 ok=1
+  api=14 insize=4767 outsize=3285 ok=1
 Cmd: compileComputeKernel
-  api=14 insize=5852 outsize=17997 ok=1
-Cmd: translateComputeKernel
-  api=14 insize=2557 outsize=3073 ok=1
+  api=14 insize=4905 outsize=2769 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
 Cmd: initializeCompiler
 
 Quitting shader compiler process
