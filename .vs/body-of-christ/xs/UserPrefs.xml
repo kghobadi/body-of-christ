@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{4DE2F9D6-EA50-1E23-5798-DE1731D7029E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CactusControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Shaders/LightingThreshold.shader">
     <Files>
-      <File FileName="Assets/Shaders/UV_Vertex_Displacement.shader" Line="44" Column="56" />
-      <File FileName="Assets/CactusControl.cs" Line="6" Column="2" />
+      <File FileName="Assets/Shaders/UV_Vertex_Displacement.shader" Line="46" Column="9" />
+      <File FileName="Assets/CactusControl.cs" Line="21" Column="55" />
+      <File FileName="Assets/Shaders/Painting.shader" Line="26" Column="13" />
+      <File FileName="Assets/Shaders/LightingThreshold.shader" Line="97" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

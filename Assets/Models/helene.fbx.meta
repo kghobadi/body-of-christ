@@ -21,6 +21,7 @@ ModelImporter:
     400014: pCube8
     2100000: lambert1
     2100002: lambert2
+    2100004: lambert3
     2300000: //RootNode
     2300002: helene
     2300004: pCube3

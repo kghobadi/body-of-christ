@@ -18,7 +18,7 @@ public class CactusControl : MonoBehaviour
         int x = 0;
         foreach (GameObject obj in cacti)
         {
-            cactiAmounts.Add(Random.Range(0f, 100f));
+            cactiAmounts.Add(Random.Range(50f, 100f));
             props.SetFloat("_Amount", cactiAmounts[x]);
 
             renderer = obj.GetComponent<MeshRenderer>();

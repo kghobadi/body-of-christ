@@ -30,7 +30,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb84e30e02715445aeb9959894e3b4d, type: 3}
   m_Name: ColorGrading
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
@@ -1347,10 +1347,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 50
+    value: 0
   threshold:
     overrideState: 1
-    value: 5
+    value: 50.2
   softKnee:
     overrideState: 1
     value: 1
@@ -1361,8 +1361,8 @@ MonoBehaviour:
     overrideState: 1
     value: 10
   anamorphicRatio:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 1
   color:
     overrideState: 1
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -1397,7 +1397,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 1.44
+    value: 4
   color:
     overrideState: 1
     value: {r: 0, g: 0, b: 0, a: 1}
@@ -1446,10 +1446,10 @@ MonoBehaviour:
     value: 0
   intensity:
     overrideState: 1
-    value: 0.42
+    value: 1
   size:
     overrideState: 1
-    value: 0.63
+    value: 3
   lumContrib:
     overrideState: 0
     value: 0.8
@@ -1465,7 +1465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
   m_Name: MotionBlur
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1

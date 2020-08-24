@@ -18,7 +18,7 @@ Shader "Custom/LightingThreshold"
 
         CGPROGRAM
         
-        #pragma surface surf Ramp vertex:vert addshadow 
+        #pragma surface surf Ramp addshadow //alpha
         
         #pragma target 2.0
        
@@ -37,17 +37,6 @@ Shader "Custom/LightingThreshold"
             float3 high;
         };
         
-        void vert (inout appdata_full v) {
-          //float4 clipspace = UnityObjectToClipPos(v.vertex.xyz);
-          //float4 screenspace = ComputeScreenPos(clipspace);
-          float4 world = mul(unity_ObjectToWorld, v.vertex);
-          float4 cam = mul(_ScreenParams, v.vertex);
-          cam.y = floor(cam.y);
-          //world.x = floor(world.x);
-          
-          v.vertex.xyz = float3(v.vertex.x, v.vertex.y, v.vertex.z);
-      }
-        
         float4 LightingRamp (SurfaceOutputCustom s, float3 lightDir, float atten) {     
             float towardsLight = dot(s.Normal, lightDir);
             
@@ -56,12 +45,13 @@ Shader "Custom/LightingThreshold"
            //
           // totalLight.rgb = s.dark;
           
-           totalLight.rgb = atten < 0.5 ? s.dark: s.light;
+           //totalLight.rgb = atten < 0.5 ? s.dark - s.light: s.light;
            
-           totalLight.rgb = towardsLight > 0.5 ? totalLight.rgb - s.dark : s.dark;
-           //totalLight.rgb = atten < 0 ? s.dark : totalLight.rgb;
-            
-            totalLight.a = 1;
+           //totalLight.rgb = towardsLight > 0.5 ? totalLight.rgb - s.dark : s.dark;
+           
+            totalLight.rgb = smoothstep(s.dark, s.light, towardsLight);
+            //totalLight.rgb = towardsLight > 0.5 ? s.light : s.dark;
+            totalLight.a = 1;//towardsLight > 0.5 ? 1.0 : 1.0;
             return totalLight;
         }
 
@@ -69,6 +59,7 @@ Shader "Custom/LightingThreshold"
         {
             float4 screenPos;
             fixed3 viewDir;
+            //float2 uv_MainTex;
         };
 
         void surf (Input IN, inout SurfaceOutputCustom o)
@@ -79,8 +70,8 @@ Shader "Custom/LightingThreshold"
             float2 textureCoordinate2 = textureCoordinate1;
             float2 normTex = textureCoordinate1;
             
-            //textureCoordinate1.x += _Time.y;
-            //textureCoordinate2.y += _Time.y;
+           // textureCoordinate1.x += _Time.y;
+           // textureCoordinate2.y += _Time.y;
             // normTex.x -= _Time.x;
             
             textureCoordinate1 = TRANSFORM_TEX(textureCoordinate1, _MainTex);
@@ -91,19 +82,21 @@ Shader "Custom/LightingThreshold"
             fixed4 e = tex2D(_SecTex, textureCoordinate2);
             fixed4 w = tex2D(_Third, textureCoordinate1);
             
-            //o.Normal = UnpackNormal (tex2D (_Norm, normTex)) ;
+           // o.Normal = UnpackScaleNormal ( tex2D(_Norm, IN.uv_MainTex), 1);
             
             o.light = c.rgb;
             o.dark = e.rgb;
             o.high = w.rgb;
-            
+           // o.light = (1,1,1);
+            //o.dark = (0,0,0);
+            o.Emission = o.light;
             ///rim
             fixed3 view = normalize(IN.viewDir);
             fixed3 nml = o.Normal;
             fixed VdN = dot(view, nml);
             fixed rim = 1.0 - saturate(VdN);
             
-            o.Emission = pow(rim, 5) > 0.5 ? c.rgb - e.rgb: e.rgb;
+            //o.Emission = pow(rim, 5) > 0.5 ? c.rgb - e.rgb: e.rgb;
             o.Alpha = 1;
 
            
