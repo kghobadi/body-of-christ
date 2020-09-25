@@ -1,15 +1,12 @@
 Base path: /Applications/Unity/Hub/Editor/2018.4.21f1/Unity.app/Contents
 Cmd: initializeCompiler
 Cmd: compileComputeKernel
-  api=14 insize=3849 outsize=3053 ok=1
+  api=14 insize=1226 outsize=1433 ok=1
 Cmd: translateComputeKernel
-  api=14 insize=3053 outsize=6745 ok=1
-Cmd: compileComputeKernel
-  api=14 insize=2891 outsize=461 ok=1
+  api=14 insize=11297 outsize=22357 ok=1
 Cmd: translateComputeKernel
-  api=14 insize=3285 outsize=4929 ok=1
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
+  api=14 insize=3265 outsize=5365 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=9533 outsize=16357 ok=1
 
 Quitting shader compiler process

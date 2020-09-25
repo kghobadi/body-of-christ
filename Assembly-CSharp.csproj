@@ -63,16 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Aura 2\Examples\Sources\Scripts\AuraFreeCamera.cs" />
-    <Compile Include="Assets\Aura 2\Examples\Sources\Scripts\AutoMoveAndRotate.cs" />
-    <Compile Include="Assets\Aura 2\Examples\Sources\Scripts\DebugFps.cs" />
-    <Compile Include="Assets\Aura 2\Examples\Sources\Scripts\LightFlicker.cs" />
-    <Compile Include="Assets\Aura 2\Examples\Sources\Scripts\MoveSinCos.cs" />
-    <Compile Include="Assets\Aura 2\Examples\Sources\Scripts\SinRotationOffset.cs" />
-    <Compile Include="Assets\CactusControl.cs" />
     <Compile Include="Assets\Prefab Brush\Scripts\PB_Enums.cs" />
     <Compile Include="Assets\Prefab Brush\Scripts\PB_SaveObject.cs" />
-    <Compile Include="Assets\randomRotation.cs" />
     <Compile Include="Assets\Scripts\Ambush\BreathingCountdown.cs" />
     <Compile Include="Assets\Scripts\Ambush\Bullet.cs" />
     <Compile Include="Assets\Scripts\Ambush\CharacterAnimator.cs" />
@@ -89,7 +81,13 @@
     <Compile Include="Assets\Scripts\Cinematics\TimelinePlaybackManager.cs" />
     <Compile Include="Assets\Scripts\Cinematics\TimelineTriggerArea.cs" />
     <Compile Include="Assets\Scripts\Controllers\FirstPersonController.cs" />
+    <Compile Include="Assets\Scripts\easton's buls\CactusControl.cs" />
+    <Compile Include="Assets\Scripts\easton's buls\CameraDepth.cs" />
     <Compile Include="Assets\Scripts\easton's buls\MouseControlLight.cs" />
+    <Compile Include="Assets\Scripts\easton's buls\RandomLighting.cs" />
+    <Compile Include="Assets\Scripts\easton's buls\randomRotation.cs" />
+    <Compile Include="Assets\Scripts\easton's buls\SendLightPosition.cs" />
+    <Compile Include="Assets\Scripts\easton's buls\WobbleCamera.cs" />
     <Compile Include="Assets\Scripts\General\AdvanceScene.cs" />
     <Compile Include="Assets\Scripts\General\AnimationHandler.cs" />
     <Compile Include="Assets\Scripts\General\AudioHandler.cs" />
@@ -122,6 +120,7 @@
     <None Include="Assets\Shaders\UV_Vertex_Displacement.shader" />
     <None Include="Assets\Monologues\Andys Monologue.txt" />
     <None Include="Assets\Monologues\Narrators Intro.txt" />
+    <None Include="Assets\Shaders\Outline.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\Monologues\Tom's Opening Line.txt" />
@@ -143,20 +142,8 @@
     <Reference Include="Cinemachine">
       <HintPath>/Users/eastonself/Documents/body-of-christ/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>/Users/eastonself/Documents/body-of-christ/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>/Users/eastonself/Documents/body-of-christ/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/eastonself/Documents/body-of-christ/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
-      <HintPath>/Users/eastonself/Documents/body-of-christ/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
-      <HintPath>/Users/eastonself/Documents/body-of-christ/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>/Users/eastonself/Documents/body-of-christ/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
@@ -172,12 +159,6 @@
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
       <HintPath>/Users/eastonself/Documents/body-of-christ/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>/Users/eastonself/Documents/body-of-christ/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>/Users/eastonself/Documents/body-of-christ/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/eastonself/Documents/body-of-christ/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
@@ -737,16 +718,6 @@
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.21f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Aura2_Core.csproj">
-      <Project>{C12AC62E-125A-854C-BE6B-5C61B1F3104D}</Project>
-      <Name>Aura2_Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="Aura2_Editor.csproj">
-      <Project>{9A0B8873-47CA-D93E-0FED-7E0C2A282C4B}</Project>
-      <Name>Aura2_Editor</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

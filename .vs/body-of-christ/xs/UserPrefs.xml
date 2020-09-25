@@ -1,27 +1,39 @@
-﻿<Properties StartupConfiguration="{4DE2F9D6-EA50-1E23-5798-DE1731D7029E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/randomRotation.cs">
+﻿<Properties StartupConfiguration="{3AB49371-7FAE-0111-12B0-BDFEDCC6A36C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AmplifyShaderEditor/Examples/Built-In/AnimatedFire/AnimatedFire.shader">
     <Files>
       <File FileName="Assets/Shaders/UV_Vertex_Displacement.shader" Line="44" Column="56" />
       <File FileName="Assets/CactusControl.cs" />
       <File FileName="Assets/Materials/LightMaterial.shadergraph" />
-      <File FileName="Assets/randomRotation.cs" Line="28" Column="11" />
+      <File FileName="Assets/randomRotation.cs" />
+      <File FileName="Assets/WobbleCamera.cs" />
+      <File FileName="Assets/SendLightPosition.cs" />
+      <File FileName="Assets/Outline.shader" />
+      <File FileName="Assets/RandomLighting.cs" />
+      <File FileName="Assets/Aura 2/Core/Code/Extensions/Amplify/AmplifyShaderEditorExample.shader" />
+      <File FileName="Assets/AmplifyShaderEditor/Examples/Built-In/CustomOutlineToon/CustomOutlineToon.shader" />
+      <File FileName="Assets/AmplifyShaderEditor/Plugins/Editor/Menu/AmplifyShaderFunction.cs" />
+      <File FileName="Assets/AmplifyShaderEditor/Examples/Built-In/AnimatedFire/AnimatedFire.shader" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="body-of-christ" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Aura 2" expanded="True">
-                <Node name="Core" expanded="True">
-                  <Node name="Code" expanded="True">
-                    <Node name="Extensions" expanded="True">
-                      <Node name="Amplify" expanded="True" />
+              <Node name="AmplifyShaderEditor" expanded="True">
+                <Node name="Examples" expanded="True">
+                  <Node name="Built-In" expanded="True">
+                    <Node name="AnimatedFire" expanded="True">
+                      <Node name="AnimatedFire.shader" selected="True" />
                     </Node>
+                  </Node>
+                </Node>
+                <Node name="Plugins" expanded="True">
+                  <Node name="Editor" expanded="True">
+                    <Node name="Menu" expanded="True" />
                   </Node>
                 </Node>
               </Node>
               <Node name="Shaders" expanded="True" />
-              <Node name="randomRotation.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -29,8 +41,8 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AmplifyShaderEditor PreferredExecutionTarget="939f5b3f-1871-4641-9547-6a907061883c" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0d6670cb-58b6-4acf-a7bf-d95c7990bf01" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
