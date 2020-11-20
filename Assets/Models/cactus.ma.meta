@@ -8,25 +8,40 @@ ModelImporter:
     100004: cactus_arm
     100006: cactus_base
     100008: cactus_piece
+    100010: cactus_arm 1
+    100012: cactus_arm1
+    100014: cactus_base1
     400000: ball_cactus
     400002: //RootNode
     400004: cactus_arm
     400006: cactus_base
     400008: cactus_piece
+    400010: cactus_arm 1
+    400012: cactus_arm1
+    400014: cactus_base1
     2100000: lambert2
     2100002: lambert1
     2300000: ball_cactus
     2300002: cactus_arm
     2300004: cactus_base
     2300006: cactus_piece
+    2300008: cactus_arm 1
+    2300010: cactus_arm1
+    2300012: cactus_base1
     3300000: ball_cactus
     3300002: cactus_arm
     3300004: cactus_base
     3300006: cactus_piece
+    3300008: cactus_arm 1
+    3300010: cactus_arm1
+    3300012: cactus_base1
     4300000: cactus_base
     4300002: cactus_arm
     4300004: ball_cactus
     4300006: cactus_piece
+    4300008: cactus_base1
+    4300010: cactus_arm
+    4300012: cactus_arm1
   externalObjects: {}
   materials:
     importMaterials: 1

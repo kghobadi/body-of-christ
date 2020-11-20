@@ -20,6 +20,10 @@ ModelImporter:
     100028: sticker1
     100030: sticker2
     100032: sticker_new
+    100034: pCube5
+    100036: pCube6
+    100038: sticker3
+    100040: sticker4
     400000: ball_cactus
     400002: //RootNode
     400004: cactus
@@ -37,6 +41,10 @@ ModelImporter:
     400028: sticker1
     400030: sticker2
     400032: sticker_new
+    400034: pCube5
+    400036: pCube6
+    400038: sticker3
+    400040: sticker4
     2100000: lambert1
     2300000: ball_cactus
     2300002: cactus
@@ -51,6 +59,10 @@ ModelImporter:
     2300020: ground
     2300022: sticker1
     2300024: sticker2
+    2300026: pCube5
+    2300028: pCube6
+    2300030: sticker3
+    2300032: sticker4
     3300000: ball_cactus
     3300002: cactus
     3300004: cactus_piece
@@ -64,6 +76,10 @@ ModelImporter:
     3300020: ground
     3300022: sticker1
     3300024: sticker2
+    3300026: pCube5
+    3300028: pCube6
+    3300030: sticker3
+    3300032: sticker4
     4300000: polySurface3
     4300002: polySurface5
     4300004: pCube1
@@ -77,6 +93,10 @@ ModelImporter:
     4300020: sticker1
     4300022: sticker2
     4300024: ground
+    4300026: pCube5
+    4300028: pCube6
+    4300030: sticker3
+    4300032: sticker4
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:

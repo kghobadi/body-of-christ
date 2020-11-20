@@ -10,6 +10,14 @@ ModelImporter:
     100008: polySurface1
     100010: polySurface2
     100012: pSphere1
+    100014: helene2
+    100016: helene2_front
+    100018: helene3
+    100020: helene3_side
+    100022: polySurface1 1
+    100024: polySurface1 2
+    100026: polySurface2 1
+    100028: polySurface2 2
     400000: //RootNode
     400002: helene
     400004: helene1
@@ -17,6 +25,14 @@ ModelImporter:
     400008: polySurface1
     400010: polySurface2
     400012: pSphere1
+    400014: helene2
+    400016: helene2_front
+    400018: helene3
+    400020: helene3_side
+    400022: polySurface1 1
+    400024: polySurface1 2
+    400026: polySurface2 1
+    400028: polySurface2 2
     2100000: lambert1
     2100002: lambert4
     2300000: //RootNode
@@ -25,17 +41,23 @@ ModelImporter:
     2300006: polySurface1
     2300008: polySurface2
     2300010: pSphere1
+    2300012: helene2_front
+    2300014: helene3_side
     3300000: //RootNode
     3300002: helene
     3300004: helene1
     3300006: polySurface1
     3300008: polySurface2
     3300010: pSphere1
+    3300012: helene2_front
+    3300014: helene3_side
     4300000: helene
     4300002: helene1
     4300004: polySurface1
     4300006: polySurface2
     4300008: pSphere1
+    4300010: helene2_front
+    4300012: helene3_side
     10800000: directionalLight1
   externalObjects: {}
   materials:

@@ -63,6 +63,7 @@ public class NavigateToPoint : MonoBehaviour
             //stop running after we are close to position
             if (Vector3.Distance(transform.position, targetPosition) < myNavMesh.stoppingDistance + 3f)
             {
+                Debug.Log("reach");
                 SetIdle();
             }
         }
@@ -85,6 +86,13 @@ public class NavigateToPoint : MonoBehaviour
         if (Physics.Raycast(castPoint, Vector3.down, out hit, Mathf.Infinity, grounded))
         {
             targetPosition = hit.point;
+        }
+        else
+        {
+            if (Physics.Raycast(castPoint, Vector3.up, out hit, Mathf.Infinity, grounded))
+            {
+                targetPosition = hit.point;
+            }
         }
 
         myNavMesh.SetDestination(targetPosition);

@@ -45,7 +45,7 @@ using UnityEngine;
 
         private void Update()
         {
-            ShiftInput();
+            //ShiftInput();
 
             ShiftReset();
         }

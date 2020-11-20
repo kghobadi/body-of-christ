@@ -8,24 +8,34 @@ ModelImporter:
     100004: rock
     100006: skull
     100008: tumbleweed
+    100010: skull1
+    100012: skull2
     400000: //RootNode
     400002: pSphere1
     400004: rock
     400006: skull
     400008: tumbleweed
+    400010: skull1
+    400012: skull2
     2100000: lambert1
     2300000: pSphere1
     2300002: rock
     2300004: skull
     2300006: tumbleweed
+    2300008: skull1
+    2300010: skull2
     3300000: pSphere1
     3300002: rock
     3300004: skull
     3300006: tumbleweed
+    3300008: skull1
+    3300010: skull2
     4300000: skull
     4300002: rock
     4300004: tumbleweed
     4300006: pSphere1
+    4300008: skull1
+    4300010: skull2
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:

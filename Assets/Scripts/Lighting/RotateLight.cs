@@ -7,6 +7,8 @@ public class RotateLight : MonoBehaviour
 {
     public float rotationSpeed;
 
+    public Material lightAng;
+
     Vector3 origRot;
 
     public float minX, maxX;
@@ -25,6 +27,9 @@ public class RotateLight : MonoBehaviour
     void Update()
     {
         TakeInput();
+
+        lightAng.SetVector("_LightDir", transform.localEulerAngles);
+
     }
 
     void TakeInput()
@@ -41,11 +46,13 @@ public class RotateLight : MonoBehaviour
 
             //base y rotation on x dist from ref point
             float rotationYAmount = currentMousePos.x - referencePoint.x;
+            float rotationxAmount = currentMousePos.y - referencePoint.y;
 
+            transform.Rotate(0, 0, 0);
 
             //only rotate when the mouse is moving 
             if(currentMousePos != lastMousePos )
-                transform.Rotate(new Vector3(0, rotationYAmount * rotationSpeed, 0));
+                //transform.Rotate(new Vector3(rotationxAmount * rotationSpeed, 0, 0));
 
             lastMousePos = currentMousePos;
         }

@@ -5,8 +5,8 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/theNarrator Kas.unity
+  - enabled: 0
+    path: Assets/Scenes/theNarrator.unity
     guid: fcca7b85c128daa428e5ebaaadc44cd4
   - enabled: 1
     path: Assets/Scenes/Riding to the Canyon.unity
