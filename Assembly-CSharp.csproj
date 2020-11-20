@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\CenterOfObjects.cs" />
     <Compile Include="Assets\DrawLight.cs" />
+    <Compile Include="Assets\FlashLight.cs" />
     <Compile Include="Assets\Prefab Brush\Scripts\PB_Enums.cs" />
     <Compile Include="Assets\Prefab Brush\Scripts\PB_SaveObject.cs" />
     <Compile Include="Assets\Scripts\Ambush\BreathingCountdown.cs" />

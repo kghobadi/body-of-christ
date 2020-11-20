@@ -15,7 +15,8 @@ public class Gun : AudioHandler
     public AudioClip fireWeapon;
     public AudioClip outOfAmmo;
     public int bulletCount = 6;
-    public ParticleSystem gunSmoke;
+    public ParticleSystem gunSmoke, bang;
+    public Light flash;
     public GameCamera heleneDead;
     public bool dead;
 
@@ -42,6 +43,8 @@ public class Gun : AudioHandler
             if (Input.GetMouseButtonDown(0) && andyCountdown.countdown <= 0)
             {
                 SpawnBullet(currentShotPos);
+                bang.Play();
+                flash.intensity = 15f;
             }
         }
         else
