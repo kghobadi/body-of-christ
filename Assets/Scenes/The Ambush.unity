@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: e2ebcb138e44a450686923aefb9ed376, type: 2}
 --- !u!1 &3780029
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,8 +207,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
---- !u!64 &43784403
-MeshCollider:
+--- !u!65 &43784403
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -217,10 +217,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000001, z: 6.123235e-17}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &43784404
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -274,8 +273,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43784402}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 31.656, y: 1.5407753, z: 105.01395}
-  m_LocalScale: {x: 9209.984, y: 9209.984, z: 9209.984}
+  m_LocalPosition: {x: 31.656, y: 1.5407753, z: 105.01}
+  m_LocalScale: {x: 898.1853, y: 2839.254, z: 9209.984}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
@@ -6225,7 +6224,8 @@ MonoBehaviour:
   myAudioSource: {fileID: 0}
   pitchRange: {x: 0.9, y: 1.1}
   voiceCounter: 0
-  voices: []
+  voices:
+  - {fileID: 510879781}
   currentSound: 0
   bullet: {fileID: 4996679294117085926, guid: 255834152e7f7ff41986cd4fc25ada46, type: 3}
   fireWeapon: {fileID: 8300000, guid: 987b5c3ce9e39a347aa29dbbf6118661, type: 3}
@@ -6252,13 +6252,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   listener: 0
-  gunLeader: {fileID: 0}
+  gunLeader: {fileID: 510879780}
   currentShotPos: {x: 0, y: 0, z: 0}
   shootable:
     serializedVersion: 2
     m_Bits: 1024
   gunRange: 150
-  helene: {fileID: 2071695038}
+  helene: {fileID: 898327778}
   character: {fileID: 1837968799}
 --- !u!82 &510879781
 AudioSource:
@@ -7780,8 +7780,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
---- !u!64 &726017916
-MeshCollider:
+--- !u!65 &726017916
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7790,10 +7790,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1.0000001, z: 1.4272087e-14}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &726017917
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26469,7 +26468,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837968791}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ecd0aa085c51c034cb5d05b2c4629cbc, type: 2}
   m_CullingMode: 0

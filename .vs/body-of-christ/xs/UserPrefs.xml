@@ -1,21 +1,21 @@
 ﻿<Properties StartupConfiguration="{3AB49371-7FAE-0111-12B0-BDFEDCC6A36C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/General/AudioHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Ambush/Gun.cs">
     <Files>
       <File FileName="Assets/Shaders/Grayscale.shader" Line="16" Column="85" />
       <File FileName="Assets/Scripts/easton's buls/Grayscale.cs" />
       <File FileName="Assets/TurnOffLight.cs" />
       <File FileName="Assets/Scripts/easton's buls/randomRotation.cs" />
       <File FileName="Assets/SetSceneColor.cs" />
-      <File FileName="Assets/Scripts/Ambush/HandAnimator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Ambush/HandAnimator.cs" />
       <File FileName="Assets/Scripts/Ambush/Gun.cs" Line="21" Column="22" />
-      <File FileName="Assets/FlashLight.cs" Line="11" Column="39" />
-      <File FileName="Assets/Scripts/General/AudioHandler.cs" Line="58" Column="1" />
+      <File FileName="Assets/FlashLight.cs" />
+      <File FileName="Assets/Scripts/General/AudioHandler.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="body-of-christ" expanded="True">
-            <Node name="Assets" expanded="True">
+            <Node name="Assets" expanded="True" selected="True">
               <Node name="AmplifyShaderEditor" expanded="True">
                 <Node name="Examples" expanded="True">
                   <Node name="Built-In" expanded="True">
@@ -32,9 +32,7 @@
                 <Node name="Ambush" expanded="True" />
                 <Node name="Cameras" expanded="True" />
                 <Node name="easton's buls" expanded="True" />
-                <Node name="General" expanded="True">
-                  <Node name="AudioHandler.cs" selected="True" />
-                </Node>
+                <Node name="General" expanded="True" />
                 <Node name="Lighting" expanded="True" />
                 <Node name="Movement" expanded="True" />
               </Node>
@@ -46,7 +44,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.AmplifyShaderEditor PreferredExecutionTarget="45139d6a-3613-4a7b-aa42-feb744944be0" />
+  <MonoDevelop.Ide.ItemProperties.AmplifyShaderEditor PreferredExecutionTarget="e21c9ed5-fee8-4c35-b619-8fd8b4aee4d3" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
