@@ -18,7 +18,8 @@ public class MonologueManager : MonoBehaviour
     //npc management refs 
     [HideInInspector]
     public WorldMonologueManager wmManager;
-    MonologueReader monoReader;
+    [Tooltip("Only set this if your canvas is Screen space and not world space (i.e., if canvas is not a child of this obj")]
+    public MonologueReader monoReader;
     
     [Tooltip("if there is a background for speaking text")]
     public FadeUI textBack;
@@ -31,6 +32,7 @@ public class MonologueManager : MonoBehaviour
     public bool inMonologue;
     [HideInInspector]
     public MonologueTrigger mTrigger;
+    public GameCamera monoCam;
 
     [Tooltip("Check to Enable monologue at index 0 at start")]
     public bool enableOnStart;
@@ -45,8 +47,11 @@ public class MonologueManager : MonoBehaviour
 
         wmManager = FindObjectOfType<WorldMonologueManager>();
         camManager = FindObjectOfType<CameraManager>();
-        monoReader = GetComponentInChildren<MonologueReader>();
-        monoReader.hostObj = gameObject;
+
+        if(monoReader == null)
+            monoReader = GetComponentInChildren<MonologueReader>();
+        if (monoReader.hostObj == null)
+            monoReader.hostObj = gameObject;
         monoReader.monoManager = this;
     }
 
@@ -89,11 +94,6 @@ public class MonologueManager : MonoBehaviour
         //disable until its time to start 
         if (allMyMonologues[currentMonologue].waitToStart)
         {
-            if (monoReader.usesTMP)
-                monoReader.the_Text.enabled = false;
-            else
-                monoReader.theText.enabled = false;
-
             StartCoroutine(WaitToStart());
         }
         //starts now
@@ -129,14 +129,19 @@ public class MonologueManager : MonoBehaviour
 
         //player ref 
         GameCamera cam = camManager.currentCamera;
-        currentPlayer = cam.transform.parent.gameObject;
+        //currentPlayer = cam.transform.parent.gameObject;
+
+        //transition to mono cam
+        if(monoCam != null)
+        {
+            camManager.Set(monoCam);
+        }
 
         //lock player movement
         if (allMyMonologues[currentMonologue].lockPlayer)
         {
             
         }
-        
 
         //begin mono 
         inMonologue = true;
@@ -174,7 +179,7 @@ public class MonologueManager : MonoBehaviour
 
         //player ref 
         GameCamera cam = camManager.currentCamera;
-        currentPlayer = cam.transform.parent.gameObject;
+        //currentPlayer = cam.transform.parent.gameObject;
 
         //unlock player
         if (mono.lockPlayer)

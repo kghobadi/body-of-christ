@@ -44,16 +44,16 @@ public class MonologueReader : MonoBehaviour {
             usesTMP = true;
             the_Text = GetComponent<TMP_Text>();
         }
-    }
-
-    void Start()
-    {
-        speakerAudio = hostObj.GetComponent<SpeakerSound>();
 
         if (usesTMP)
             the_Text.enabled = false;
         else
             theText.enabled = false;
+    }
+
+    void Start()
+    {
+        speakerAudio = hostObj.GetComponent<SpeakerSound>();
     }
 
     void Update ()
