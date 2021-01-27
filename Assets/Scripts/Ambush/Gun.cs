@@ -19,13 +19,7 @@ public class Gun : AudioHandler
     public Light flash;
     public GameCamera heleneDead;
     public bool dead;
-
-    [Header("Gun Listener behavior for Tom")]
-    public BreathingCountdown andyCountdown;
-    public UnityEvent gunFired;
-    public bool listener;
-    public Gun gunLeader;
-
+    
     void Start()
     {
         mainCam = Camera.main;
@@ -77,40 +71,23 @@ public class Gun : AudioHandler
 
             PlaySoundRandomPitch(outOfAmmo, 1f);
 
-            //one time death transition 
-            if (!dead)
-            {
-                gunSmoke.Play();
-
-                character.SetAnimator("dead");
-
-                camManager.Set(heleneDead);
-            }
+            Kill();
         }
     }
 
-    //for toms gun
-    public void ShootCurrentPos()
+    void Kill()
     {
-        if (bulletCount > 0)
-        {
-            GameObject bulletClone = Instantiate(bullet, transform.position, Quaternion.identity);
-
-            Bullet bulletScript = bulletClone.GetComponent<Bullet>();
-
-            bulletScript.shotDest = currentShotPos;
-
-            PlaySoundRandomPitch(fireWeapon, 1f);
-
-            bulletCount--;
-
-            gunSmoke.Play();
-        }
-        else
+        //one time death transition 
+        if (!dead)
         {
             gunSmoke.Play();
 
             character.SetAnimator("dead");
+
+            camManager.Set(heleneDead);
+
+            dead = true;
+                
         }
     }
 
@@ -119,6 +96,7 @@ public class Gun : AudioHandler
     public LayerMask shootable;
     public float gunRange = 150f;
     public Transform helene;
+  
     public CharacterAnimator character;
 
     //sends a raycast forward
@@ -146,4 +124,38 @@ public class Gun : AudioHandler
             currentShotPos = helene.position;
         }
     }
+    
+    [Header("Gun Listener behavior for Tom")]
+    public BreathingCountdown andyCountdown;
+    public UnityEvent gunFired;
+    public bool listener;
+    public Gun gunLeader;
+    public Transform matthew;
+    
+    //for toms gun
+    public void ShootCurrentPos()
+    {
+        if (bulletCount > 0)
+        {
+            GameObject bulletClone = Instantiate(bullet, transform.position, Quaternion.identity);
+
+            Bullet bulletScript = bulletClone.GetComponent<Bullet>();
+
+            bulletScript.shotDest = currentShotPos;
+
+            PlaySoundRandomPitch(fireWeapon, 1f);
+
+            bulletCount--;
+
+            gunSmoke.Play();
+        }
+        else
+        {
+            gunSmoke.Play();
+
+            character.SetAnimator("dead");
+        }
+    }
+    
+    
 }
