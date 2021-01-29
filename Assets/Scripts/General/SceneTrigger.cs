@@ -5,6 +5,7 @@ using UnityEngine;
 public class SceneTrigger : MonoBehaviour
 {
     AdvanceScene scener;
+    public string triggerTag = "Character";
 
     public TriggerType triggerType;
     public enum TriggerType
@@ -19,7 +20,7 @@ public class SceneTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Character")
+        if(other.gameObject.tag == triggerTag)
         {
             switch (triggerType)
             {
