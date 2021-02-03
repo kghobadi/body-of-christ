@@ -153,7 +153,7 @@ public class MonologueManager : MonoBehaviour
     public void DisableMonologue()
     {
         StopAllCoroutines();
-
+        monoReader.StopAllCoroutines();
         //disable text components 
         if (monoReader.usesTMP)
             monoReader.the_Text.enabled = false;
