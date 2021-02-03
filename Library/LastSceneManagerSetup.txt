@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/The Ambush.unity
-  isLoaded: 1
-  isActive: 1

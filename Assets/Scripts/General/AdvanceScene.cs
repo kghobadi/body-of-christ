@@ -8,6 +8,8 @@ public class AdvanceScene : MonoBehaviour {
     public float timeToRestart = 5f;
     public float restartTimer;
 
+    public FadeUI fader;
+
 	void Update ()
     {
         //next scene 
@@ -45,6 +47,22 @@ public class AdvanceScene : MonoBehaviour {
 
     public void LoadNextScene()
     {
+        if (fader)
+        {
+            fader.FadeIn();
+
+            StartCoroutine(WaitToLoad(1f));
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+
+    IEnumerator WaitToLoad(float time)
+    {
+        yield return new WaitForSeconds(time);
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

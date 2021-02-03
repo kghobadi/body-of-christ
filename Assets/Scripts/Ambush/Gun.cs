@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.Events;
 using Cameras;
 
-//this script controls the gun inputs, breathing, and countdown required to fire at Helene
+//this script controls the gun inputs, aiming, and firing at Helene (as well as her death transition)
 public class Gun : AudioHandler
 {
+    //camera refs
     Camera mainCam;
     CameraManager camManager;
 
@@ -19,13 +20,9 @@ public class Gun : AudioHandler
     public Light flash;
     public GameCamera heleneDead;
     public bool dead;
-
-    [Header("Gun Listener behavior for Tom")]
     public BreathingCountdown andyCountdown;
     public UnityEvent gunFired;
-    public bool listener;
-    public Gun gunLeader;
-
+    
     void Start()
     {
         mainCam = Camera.main;
@@ -34,23 +31,13 @@ public class Gun : AudioHandler
     
     void Update()
     {
-        //behavior for player as Andy 
-        if (listener == false)
-        {
-            AimGun();
+        AimGun();
 
-            //only can shoot once countdown reaches 0
-            if (Input.GetMouseButtonDown(0) && andyCountdown.countdown <= 0)
-            {
-                SpawnBullet(currentShotPos);
-                bang.Play();
-                flash.intensity = 15f;
-            }
-        }
-        else
+        //only can shoot once countdown reaches 0
+        if (Input.GetMouseButtonDown(0) && andyCountdown.countdown <= 0)
         {
-            //behavior for tom
-            currentShotPos = helene.position;
+            SpawnBullet(currentShotPos);
+            
         }
     }
 
@@ -68,49 +55,34 @@ public class Gun : AudioHandler
             PlaySoundRandomPitch(fireWeapon, 1f);
 
             bulletCount--;
+            
+            //bang & flash effect
+            bang.Play();
+            flash.intensity = 15f;
 
             gunFired.Invoke();
         }
         else
         {
-            gunFired.Invoke();
-
             PlaySoundRandomPitch(outOfAmmo, 1f);
 
-            //one time death transition 
-            if (!dead)
-            {
-                gunSmoke.Play();
-
-                character.SetAnimator("dead");
-
-                camManager.Set(heleneDead);
-            }
+            Kill();
         }
     }
 
-    //for toms gun
-    public void ShootCurrentPos()
+    void Kill()
     {
-        if (bulletCount > 0)
-        {
-            GameObject bulletClone = Instantiate(bullet, transform.position, Quaternion.identity);
-
-            Bullet bulletScript = bulletClone.GetComponent<Bullet>();
-
-            bulletScript.shotDest = currentShotPos;
-
-            PlaySoundRandomPitch(fireWeapon, 1f);
-
-            bulletCount--;
-
-            gunSmoke.Play();
-        }
-        else
+        //one time death transition 
+        if (!dead)
         {
             gunSmoke.Play();
 
             character.SetAnimator("dead");
+            
+            camManager.Set(heleneDead);
+
+            dead = true;
+                
         }
     }
 
@@ -146,4 +118,5 @@ public class Gun : AudioHandler
             currentShotPos = helene.position;
         }
     }
+    
 }
