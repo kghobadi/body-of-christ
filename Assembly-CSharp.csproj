@@ -64,16 +64,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CenterOfObjects.cs" />
     <Compile Include="Assets\ChangeShadowRes.cs" />
-    <Compile Include="Assets\DrawLight.cs" />
-    <Compile Include="Assets\FlashLight.cs" />
     <Compile Include="Assets\Prefab Brush\Scripts\PB_Enums.cs" />
     <Compile Include="Assets\Prefab Brush\Scripts\PB_SaveObject.cs" />
     <Compile Include="Assets\Scripts\Ambush\BreathingCountdown.cs" />
     <Compile Include="Assets\Scripts\Ambush\Bullet.cs" />
     <Compile Include="Assets\Scripts\Ambush\CharacterAnimator.cs" />
     <Compile Include="Assets\Scripts\Ambush\Gun.cs" />
+    <Compile Include="Assets\Scripts\Ambush\GunListener.cs" />
     <Compile Include="Assets\Scripts\Ambush\HandAnimator.cs" />
     <Compile Include="Assets\Scripts\Cameras\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Cameras\GameCamera.cs" />
@@ -88,11 +86,16 @@
     <Compile Include="Assets\Scripts\Controllers\FirstPersonController.cs" />
     <Compile Include="Assets\Scripts\easton's buls\CactusControl.cs" />
     <Compile Include="Assets\Scripts\easton's buls\CameraDepth.cs" />
+    <Compile Include="Assets\Scripts\easton's buls\CenterOfObjects.cs" />
+    <Compile Include="Assets\Scripts\easton's buls\DrawLight.cs" />
+    <Compile Include="Assets\Scripts\easton's buls\FlashLight.cs" />
     <Compile Include="Assets\Scripts\easton's buls\Grayscale.cs" />
     <Compile Include="Assets\Scripts\easton's buls\MouseControlLight.cs" />
     <Compile Include="Assets\Scripts\easton's buls\RandomLighting.cs" />
     <Compile Include="Assets\Scripts\easton's buls\randomRotation.cs" />
     <Compile Include="Assets\Scripts\easton's buls\SendLightPosition.cs" />
+    <Compile Include="Assets\Scripts\easton's buls\SetSceneColor.cs" />
+    <Compile Include="Assets\Scripts\easton's buls\TurnOffLight.cs" />
     <Compile Include="Assets\Scripts\easton's buls\WobbleCamera.cs" />
     <Compile Include="Assets\Scripts\General\AdvanceScene.cs" />
     <Compile Include="Assets\Scripts\General\AnimationHandler.cs" />
@@ -104,9 +107,14 @@
     <Compile Include="Assets\Scripts\General\MusicFader.cs" />
     <Compile Include="Assets\Scripts\General\ResetNearbyAudioSources.cs" />
     <Compile Include="Assets\Scripts\General\SceneTrigger.cs" />
+    <Compile Include="Assets\Scripts\Lighting\ControlLight.cs" />
     <Compile Include="Assets\Scripts\Lighting\ExpandSpotlight.cs" />
+    <Compile Include="Assets\Scripts\Lighting\Illuminate.cs" />
+    <Compile Include="Assets\Scripts\Lighting\IlluminateText.cs" />
+    <Compile Include="Assets\Scripts\Lighting\IsVisible.cs" />
     <Compile Include="Assets\Scripts\Lighting\RotateLight.cs" />
     <Compile Include="Assets\Scripts\Monologues\AnimateDialogue.cs" />
+    <Compile Include="Assets\Scripts\Monologues\ClickToStartMono.cs" />
     <Compile Include="Assets\Scripts\Monologues\Monologue.cs" />
     <Compile Include="Assets\Scripts\Monologues\MonologueManager.cs" />
     <Compile Include="Assets\Scripts\Monologues\MonologueReader.cs" />
@@ -116,21 +124,25 @@
     <Compile Include="Assets\Scripts\Monologues\SpeakerSound.cs" />
     <Compile Include="Assets\Scripts\Monologues\WorldMonologueManager.cs" />
     <Compile Include="Assets\Scripts\Movement\Animations.cs" />
+    <Compile Include="Assets\Scripts\Movement\MeditationMovement.cs" />
     <Compile Include="Assets\Scripts\Movement\NavigateToPoint.cs" />
-    <Compile Include="Assets\SetSceneColor.cs" />
-    <Compile Include="Assets\TurnOffLight.cs" />
+    <Compile Include="Assets\Scripts\Triggers\ActivationTrigger.cs" />
+    <Compile Include="Assets\Scripts\Triggers\EventTrigger.cs" />
+    <Compile Include="Assets\Scripts\Triggers\JumpTrigger.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Monologues\Andy Regarding the Bison.txt" />
+    <None Include="Assets\Monologues\Matthews Final Words.txt" />
     <None Include="Assets\Shaders\ColorToonShader.shader" />
     <None Include="Assets\Shaders\Grayscale.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\Smoke.shader" />
+    <None Include="Assets\Shaders\Smoke.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\Shaders\UV_Vertex_Displacement.shader" />
     <None Include="Assets\Monologues\Andys Monologue.txt" />
     <None Include="Assets\Monologues\Narrators Intro.txt" />
-    <None Include="Assets\ShaderTesting.shader" />
+    <None Include="Assets\Fonts\alt-west\read me.txt" />
+    <None Include="Assets\Shaders\ShaderTesting.shader" />
     <None Include="Assets\Shaders\Irid.shader" />
     <None Include="Assets\Shaders\Outline.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -141,7 +153,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Shaders\Painting.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\Ground.shader" />
+    <None Include="Assets\Shaders\Ground.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Shaders\UnlitNoFog.shader" />
@@ -153,6 +165,7 @@
     <None Include="Assets\Monologues\Tom Questioning Bison.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Fonts\alt-west\license.txt" />
     <Reference Include="Cinemachine">
       <HintPath>/Users/eastonself/Documents/body-of-christ/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
