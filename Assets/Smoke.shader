@@ -10,7 +10,7 @@ Shader "Smoke"
 
 	SubShader
 	{
-		Tags{ "RenderType" = "Transparent"  "Queue" = "Transparent+0" "IgnoreProjector" = "True" "IsEmissive" = "true"  }
+		Tags{ "RenderType" = "Transparent"  "Queue" = "Transparent+0" "IgnoreProjector" = "True" }
 		Cull Back
 		CGINCLUDE
 		#include "UnityShaderVariables.cginc"
@@ -90,7 +90,7 @@ Shader "Smoke"
 			float smoothstepResult13 = smoothstep( 0.1 , 1.0 , simplePerlin2D2);
 			dither19 = step( dither19, smoothstepResult13 );
 			float3 temp_cast_1 = (dither19).xxx;
-			o.Emission = temp_cast_1;
+			o.Albedo = temp_cast_1;
 			o.Alpha = dither19;
 		}
 
@@ -177,7 +177,7 @@ Shader "Smoke"
 }
 /*ASEBEGIN
 Version=18500
--10;323;1772;925;606.8441;178.6155;1;True;False
+0;23;1792;922;751.8441;202.6155;1;True;False
 Node;AmplifyShaderEditor.SimpleTimeNode;15;-974.5134,637.8971;Inherit;False;1;0;FLOAT;0.1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.DynamicAppendNode;17;-809.2402,467.9035;Inherit;False;FLOAT4;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT4;0
 Node;AmplifyShaderEditor.TextureCoordinatesNode;14;-640.8215,437.9973;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
@@ -203,7 +203,7 @@ WireConnection;9;1;10;0
 WireConnection;8;0;7;0
 WireConnection;8;1;4;0
 WireConnection;19;0;13;0
-WireConnection;0;2;19;0
+WireConnection;0;0;19;0
 WireConnection;0;9;19;0
 ASEEND*/
-//CHKSM=6D1BEB57D7C5D761010FF10F859E1C48D5007B47
+//CHKSM=4228FF97244C391E10C7AD598833342DB5823F53
