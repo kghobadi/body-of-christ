@@ -9,34 +9,38 @@ public class AdvanceScene : MonoBehaviour {
     public float restartTimer;
 
     public FadeUI fader;
-
+    public bool debugInputs;
+    
 	void Update ()
     {
-        //next scene 
-        if (Input.GetKeyDown(KeyCode.Return) )
+        if (debugInputs)
         {
-            LoadNextScene();
-        }
-
-        //previous scene 
-        if (Input.GetKeyDown(KeyCode.CapsLock) )
-        {
-            LoadPreviousScene();
-        }
-
-        //restart game
-        if (Input.GetKey(KeyCode.Delete) )
-        {
-            restartTimer += Time.deltaTime;
-
-            if(restartTimer > timeToRestart)
+            //next scene 
+            if (Input.GetKeyDown(KeyCode.Return) )
             {
-                Restart();
+                LoadNextScene();
             }
-        }
-        else
-        {
-            restartTimer = 0;
+
+            //previous scene 
+            if (Input.GetKeyDown(KeyCode.CapsLock) )
+            {
+                LoadPreviousScene();
+            }
+
+            //restart game
+            if (Input.GetKey(KeyCode.Delete) )
+            {
+                restartTimer += Time.deltaTime;
+
+                if(restartTimer > timeToRestart)
+                {
+                    Restart();
+                }
+            }
+            else
+            {
+                restartTimer = 0;
+            }
         }
 	}
 
