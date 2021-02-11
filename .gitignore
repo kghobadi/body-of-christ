@@ -69,3 +69,7 @@ Assets/Textures/easton_playing_substance/glass_height.png
 Assets/Textures/easton_playing_substance/glass_normal.png
 .idea
 Library
+body-of-christ.sln
+Assembly-CSharp.csproj
+Assembly-CSharp-Editor.csproj
+obj
