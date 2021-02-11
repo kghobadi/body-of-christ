@@ -22,18 +22,25 @@ public class SceneTrigger : MonoBehaviour
     {
         if(other.gameObject.tag == triggerTag)
         {
-            switch (triggerType)
-            {
-                case TriggerType.LOADNEXT:
-                    scener.LoadNextScene();
-                    break;
-                case TriggerType.RESTARTGAME:
-                    scener.Restart();
-                    break;
-                case TriggerType.QUIT:
-                    scener.Quit();
-                    break;
-            }
+            SetTrigger();
         }
+    }
+
+    public void SetTrigger()
+    {
+        switch (triggerType)
+        {
+            case TriggerType.LOADNEXT:
+                scener.LoadNextScene();
+                break;
+            case TriggerType.RESTARTGAME:
+                scener.Restart();
+                break;
+            case TriggerType.QUIT:
+                scener.Quit();
+                break;
+        }
+        
+        Debug.Log("Set Scene Trigger");
     }
 }
