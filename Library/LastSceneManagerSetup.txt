@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Riding to the Canyon.unity
+- path: Assets/Scenes/The Ambush.unity
   isLoaded: 1
   isActive: 1
