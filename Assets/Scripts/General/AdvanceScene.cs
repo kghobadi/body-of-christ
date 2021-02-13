@@ -9,6 +9,8 @@ public class AdvanceScene : MonoBehaviour {
     public float restartTimer;
 
     public FadeUI fader;
+    public MusicFader musicFader;
+    public float fadeWait = 1f;
     public bool debugInputs;
     
 	void Update ()
@@ -54,8 +56,11 @@ public class AdvanceScene : MonoBehaviour {
         if (fader)
         {
             fader.FadeIn();
+            
+            if(musicFader)
+                musicFader.FadeOut(0f, musicFader.fadeSpeed);
 
-            StartCoroutine(WaitToLoad(1f));
+            StartCoroutine(WaitToLoad(fadeWait, SceneManager.GetActiveScene().buildIndex + 1));
         }
         else
         {
@@ -63,16 +68,29 @@ public class AdvanceScene : MonoBehaviour {
         }
     }
 
-    IEnumerator WaitToLoad(float time)
+    public void Restart()
+    {
+        if (fader)
+        {
+            fader.FadeIn();
+            
+            if(musicFader)
+                musicFader.FadeOut(0f, musicFader.fadeSpeed);
+
+            StartCoroutine(WaitToLoad(fadeWait, 0));
+        }
+        else
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
+    
+    
+    IEnumerator WaitToLoad(float time, int scene)
     {
         yield return new WaitForSeconds(time);
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    public void Restart()
-    {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(scene);
     }
 
     public void Quit()
