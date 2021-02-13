@@ -2,7 +2,6 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
@@ -68,3 +67,9 @@ Assets/Textures/easton_playing_substance/glass_ambientOcclusion.png
 Assets/Textures/easton_playing_substance/glass_basecolor.png
 Assets/Textures/easton_playing_substance/glass_height.png
 Assets/Textures/easton_playing_substance/glass_normal.png
+.idea
+Library
+body-of-christ.sln
+Assembly-CSharp.csproj
+Assembly-CSharp-Editor.csproj
+obj

@@ -21,8 +21,8 @@ using UnityEngine;
         [Header("Shifting")]
         public float shiftDistance;
         public LayerMask shiftable;
-
-        public bool canShift;
+        public bool shiftingAllowed;
+        bool canShift;
         float shiftResetTimer = 0f, shiftReset = 1f;
         
         private void Awake()
@@ -45,16 +45,19 @@ using UnityEngine;
 
         private void Update()
         {
-            //ShiftInput();
+            if (shiftingAllowed)
+            {
+                ShiftInput();
 
-            ShiftReset();
+                ShiftReset();
+            }
         }
 
         void ShiftInput()
         {
             if (canShift)
             {
-                if (Input.GetKeyDown(KeyCode.RightShift))
+                if (Input.GetKeyDown(KeyCode.RightShift) || Input.GetMouseButtonDown(0))
                 {
                     if (currentCam < cameras.Length - 1)
                     {
@@ -67,7 +70,7 @@ using UnityEngine;
                     Set(cameras[currentCam]);
                 }
 
-                if (Input.GetKeyDown(KeyCode.LeftShift))
+                if (Input.GetKeyDown(KeyCode.LeftShift)|| Input.GetMouseButtonDown(1))
                 {
                     if (currentCam > 0)
                     {

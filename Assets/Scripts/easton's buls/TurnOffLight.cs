@@ -5,22 +5,34 @@ using UnityEngine;
 public class TurnOffLight : MonoBehaviour
 {
     private Light light;
-    // Start is called before the first frame update
+    public SceneTrigger sceneAdvance;
+    public float transitionVal;
+    public float normalVal = 45f;
     void Start()
     {
         light = GetComponent<Light>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //while pressing mouse, shrink light
         if (Input.GetMouseButton(0))
         {
             light.range = Mathf.Lerp(light.range, 0f, Time.deltaTime);
+
+            //check for scene transition
+            if (light.range < transitionVal)
+            {
+                if (sceneAdvance)
+                {
+                    sceneAdvance.SetTrigger();
+                }
+            }
         }
+        //reset light when not pressing 
         else
         {
-            light.range = Mathf.Lerp(light.range, 45f, Time.deltaTime);
+            light.range = Mathf.Lerp(light.range, normalVal, Time.deltaTime);
         }
     }
 }
