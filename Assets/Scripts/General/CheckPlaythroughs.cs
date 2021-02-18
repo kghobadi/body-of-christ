@@ -20,6 +20,10 @@ public class CheckPlaythroughs : MonoBehaviour
     void Start()
     {
         CheckPlaythrough();
+
+        //unlock and visible cursor
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
     
     void CheckPlaythrough()
