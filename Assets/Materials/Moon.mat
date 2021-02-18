@@ -92,8 +92,12 @@ Material:
     - _SoftParticlesNearFadeDistance: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TilingSpeed: 0.1
+    - _TilingSpeed: 5
     - _UVSec: 0
+    - _WorldTile: 1
+    - _XAxisScale: 0.01
+    - _YAxisScale: 0.02
+    - _ZAxisScale: 0.02
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:

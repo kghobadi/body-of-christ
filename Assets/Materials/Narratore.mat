@@ -61,7 +61,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BlendOp: 0
-    - _Brightness: 3.5
+    - _Brightness: 2
     - _BumpScale: 1
     - _CameraFadingEnabled: 0
     - _CameraFarFadeDistance: 2
@@ -92,8 +92,12 @@ Material:
     - _SoftParticlesNearFadeDistance: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TilingSpeed: 5
+    - _TilingSpeed: 3
     - _UVSec: 0
+    - _WorldTile: 0.2
+    - _XAxisScale: 1
+    - _YAxisScale: 1
+    - _ZAxisScale: 1
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:

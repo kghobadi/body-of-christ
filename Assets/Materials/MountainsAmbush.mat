@@ -105,6 +105,10 @@ Material:
     - _Step: 0.27
     - _TilingSpeed: 0.2
     - _UVSec: 0
+    - _WorldTile: 0.1
+    - _XAxisScale: 0.01
+    - _YAxisScale: 0.01
+    - _ZAxisScale: 0.01
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
