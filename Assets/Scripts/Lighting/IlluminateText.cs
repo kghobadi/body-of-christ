@@ -5,7 +5,8 @@ using UnityEngine;
 //if an Illuminate script triggers this -- text will become visible
 public class IlluminateText : MonoBehaviour
 {
-    public FadeUI textFade;
+    public MonologueManager monoMan;
+    public FadeUI[] textFades;
     public bool illuminated;
     Coroutine waitToFadeOut;
 
@@ -21,11 +22,17 @@ public class IlluminateText : MonoBehaviour
         //need to fade in!
         else
         {
-            textFade.FadeIn();
+            if (monoMan.inMonologue)
+            {
+                for (int i = 0; i < textFades.Length; i++)
+                {
+                    textFades[i].FadeIn();
+                }
+            
+                illuminated = true;
 
-            illuminated = true;
-
-            waitToFadeOut = StartCoroutine(WaitToFadeOut(0.5f));
+                waitToFadeOut = StartCoroutine(WaitToFadeOut(0.5f));
+            }
         }
     }
 
@@ -33,8 +40,11 @@ public class IlluminateText : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
 
-        textFade.FadeOut();
-
+        for (int i = 0; i < textFades.Length; i++)
+        {
+            textFades[i].FadeOut();
+        }
+        
         illuminated = false;
         Debug.Log("stopped illunating");
     }
