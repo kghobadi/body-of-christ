@@ -77,6 +77,7 @@ Material:
     - _DstBlend: 0
     - _EmissionEnabled: 0
     - _FlipbookMode: 0
+    - _Float0: 1
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
@@ -84,6 +85,8 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _NoiseScale: 1
+    - _NoiseScale3: 1
+    - _NoiseScale4: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
@@ -94,8 +97,11 @@ Material:
     - _SrcBlend: 1
     - _TilingSpeed: 11.87
     - _UVSec: 0
+    - _XAxisScale: 1
+    - _YAxisScale: 1
+    - _ZAxisScale: 1
     - _ZWrite: 1
-    - __dirty: 0
+    - __dirty: 1
     m_Colors:
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
