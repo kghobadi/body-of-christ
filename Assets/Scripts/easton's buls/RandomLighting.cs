@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class RandomLighting : MonoBehaviour
 {
-    public Material light;
-    public Vector3 lightDir;
+    public Light light;
+    public float speed, angleSpeed;
     // Start is called before the first frame update
     void Start()
     {
-        light = GetComponent<Renderer>().material;
-        lightDir = Random.insideUnitSphere;
+        //light = GetComponent<Renderer>().material;
+        //lightDir = Random.insideUnitSphere;
     }
 
     // Update is called once per frame
     void Update()
     {
-        lightDir = new Vector3(Mathf.PerlinNoise(Time.time, lightDir.x), Mathf.PerlinNoise(Time.time, lightDir.y), Mathf.PerlinNoise(Time.time, lightDir.z));
-        light.SetVector("Vector3_EFA8D867", lightDir);
+        light.intensity = Mathf.PerlinNoise(Time.time * speed, 0) + 0.5f;
+        light.spotAngle = (Mathf.PerlinNoise(Time.time * angleSpeed, 1) * 15f) + 30;
     }
 }

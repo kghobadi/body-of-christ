@@ -752,7 +752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64538617853c04799a1c60dcc2e4f57e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  lightAng: {fileID: 0}
 --- !u!4 &187823072 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 690b729669315414a81ecf288f2ed49d,
@@ -5344,7 +5344,7 @@ PrefabInstance:
       objectReference: {fileID: 2100002, guid: 31c3585a34f4e4993b31fa2b975f0c61, type: 3}
     - target: {fileID: 2300000, guid: 690b729669315414a81ecf288f2ed49d, type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 690b729669315414a81ecf288f2ed49d, type: 3}
       propertyPath: m_ReceiveShadows
@@ -5719,7 +5719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 31c3585a34f4e4993b31fa2b975f0c61, type: 3}
       propertyPath: m_CastShadows
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 31c3585a34f4e4993b31fa2b975f0c61, type: 3}
       propertyPath: m_Materials.Array.data[0]

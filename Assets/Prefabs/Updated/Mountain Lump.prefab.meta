@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Materials/Narrator.mat.meta
-guid: 3bb774c2bdaca444d8a93563085101b1
-NativeFormatImporter:
-=======
-guid: a30db590ee81eec40a66d3dd4b26aefd
+guid: bd14ee15191af854f8a3bceaf1e3b41b
 PrefabImporter:
->>>>>>> origin/kas-updates:Assets/Prefabs/Updated/Mountain Lump.prefab.meta
   externalObjects: {}
-  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
