@@ -9,6 +9,7 @@ public class SpeakerSound : AudioHandler
     [Tooltip("enables voice audio")]
     public bool hasVoiceAudio;
     public bool usesAllLetters, countsUp;
+    public bool randomPitch;
     public int speakFreq = 4;
     
     //for random sound reading
@@ -74,8 +75,14 @@ public class SpeakerSound : AudioHandler
         //for characters who only use gibberish sounds
         else
         {
-            PlayRandomSound(spokenSounds, 1f);
-            //Debug.Log("gibberish");
+            if (randomPitch)
+            {
+                PlayRandomSoundRandomPitch(spokenSounds, 1f);
+            }
+            else
+            {
+                PlayRandomSound(spokenSounds, 1f);
+            }
         }
 
     }

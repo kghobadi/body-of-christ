@@ -40284,6 +40284,7 @@ MonoBehaviour:
   hasVoiceAudio: 0
   usesAllLetters: 0
   countsUp: 0
+  randomPitch: 0
   speakFreq: 4
   spokenSounds: []
   letters: 
@@ -40494,6 +40495,7 @@ MonoBehaviour:
   hasVoiceAudio: 1
   usesAllLetters: 0
   countsUp: 0
+  randomPitch: 1
   speakFreq: 4
   spokenSounds:
   - {fileID: 8300000, guid: 2a339f6e46316fd43a62633f61221624, type: 3}
@@ -51930,6 +51932,7 @@ MonoBehaviour:
   hasVoiceAudio: 1
   usesAllLetters: 0
   countsUp: 0
+  randomPitch: 1
   speakFreq: 4
   spokenSounds:
   - {fileID: 8300000, guid: 98b33616162b47b438df62606ba09c7a, type: 3}
@@ -57531,6 +57534,7 @@ MonoBehaviour:
   hasVoiceAudio: 0
   usesAllLetters: 0
   countsUp: 0
+  randomPitch: 0
   speakFreq: 4
   spokenSounds: []
   letters: 

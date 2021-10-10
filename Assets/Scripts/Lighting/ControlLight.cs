@@ -17,6 +17,10 @@ public class ControlLight : MonoBehaviour
     {
         mainCam = Camera.main;
         camTransform = mainCam.transform;
+
+        //disable cursor 
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
