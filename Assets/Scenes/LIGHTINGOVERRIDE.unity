@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.99121004, g: 0.99121004, b: 0.99121004, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -192,6 +192,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rp_nathan_animated_003_walking
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3131f7aa277bb8e4b85822c96f5a0786, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3131f7aa277bb8e4b85822c96f5a0786, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.431
@@ -258,7 +262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &723818092
 Transform:
   m_ObjectHideFlags: 0
@@ -267,7 +271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723818091}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.13, y: 0.95768225, z: 2.23}
+  m_LocalPosition: {x: 11.21, y: 0.95768225, z: 2.23}
   m_LocalScale: {x: 4.66256, y: 2.62269, z: 0.29141}
   m_Children: []
   m_Father: {fileID: 0}
@@ -400,6 +404,7 @@ MonoBehaviour:
   light: {fileID: 841755838}
   speed: 3
   angleSpeed: 1
+  maxIntese: 2
 --- !u!1 &888665561
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +442,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -452,14 +457,14 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 15
-  orthographic: 0
+  orthographic: 1
   orthographic size: 0.34
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: f8257aa8063a8824485fd5341717c9f9, type: 2}
+  m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -561,7 +566,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1222825581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,7 +616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &2049308364
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -679,7 +684,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049308363}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.13, y: 0.95768225, z: 2.71}
+  m_LocalPosition: {x: 11.21, y: 0.95768225, z: 2.71}
   m_LocalScale: {x: 3.27716, y: 3.27716, z: 0.81929}
   m_Children: []
   m_Father: {fileID: 0}

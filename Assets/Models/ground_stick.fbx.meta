@@ -1,43 +1,112 @@
 fileFormatVersion: 2
 guid: fcb95abde51bd40d598a7546af1f4d5e
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: pCube1
-    100004: polySurface3
-    100006: polySurface4
-    100008: polySurface5
-    100010: sticker
-    100012: terrain
-    400000: //RootNode
-    400002: pCube1
-    400004: polySurface3
-    400006: polySurface4
-    400008: polySurface5
-    400010: sticker
-    400012: terrain
-    2100000: lambert1
-    2300000: pCube1
-    2300002: polySurface3
-    2300004: polySurface4
-    2300006: polySurface5
-    2300008: sticker
-    2300010: //RootNode
-    3300000: pCube1
-    3300002: polySurface3
-    3300004: polySurface4
-    3300006: polySurface5
-    3300008: sticker
-    3300010: //RootNode
-    4300000: polySurface3
-    4300002: polySurface4
-    4300004: polySurface5
-    4300006: pCube1
-    4300008: sticker
-  externalObjects: {}
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: pCube1
+  - first:
+      1: 100004
+    second: polySurface3
+  - first:
+      1: 100006
+    second: polySurface4
+  - first:
+      1: 100008
+    second: polySurface5
+  - first:
+      1: 100010
+    second: sticker
+  - first:
+      1: 100012
+    second: terrain
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: pCube1
+  - first:
+      4: 400004
+    second: polySurface3
+  - first:
+      4: 400006
+    second: polySurface4
+  - first:
+      4: 400008
+    second: polySurface5
+  - first:
+      4: 400010
+    second: sticker
+  - first:
+      4: 400012
+    second: terrain
+  - first:
+      21: 2100000
+    second: lambert1
+  - first:
+      23: 2300000
+    second: pCube1
+  - first:
+      23: 2300002
+    second: polySurface3
+  - first:
+      23: 2300004
+    second: polySurface4
+  - first:
+      23: 2300006
+    second: polySurface5
+  - first:
+      23: 2300008
+    second: sticker
+  - first:
+      23: 2300010
+    second: //RootNode
+  - first:
+      33: 3300000
+    second: pCube1
+  - first:
+      33: 3300002
+    second: polySurface3
+  - first:
+      33: 3300004
+    second: polySurface4
+  - first:
+      33: 3300006
+    second: polySurface5
+  - first:
+      33: 3300008
+    second: sticker
+  - first:
+      33: 3300010
+    second: //RootNode
+  - first:
+      43: 4300000
+    second: polySurface3
+  - first:
+      43: 4300002
+    second: polySurface4
+  - first:
+      43: 4300004
+    second: polySurface5
+  - first:
+      43: 4300006
+    second: pCube1
+  - first:
+      43: 4300008
+    second: sticker
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: ee185390a49015b47815d0a8edcfd3be, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -66,41 +135,48 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 3000
+    globalScale: 1000
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
-    normalSmoothAngle: 0
+    normalSmoothAngle: 180
     normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -110,13 +186,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1000
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
