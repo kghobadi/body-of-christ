@@ -16,7 +16,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   threshold:
     m_OverrideState: 1
-    m_Value: 0.01
+    m_Value: 1e-11
 --- !u!114 &-8000570791228410393
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -121,11 +121,11 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 8
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.099
+    m_Value: 0.2
     min: 0
     max: 1
   scatter:

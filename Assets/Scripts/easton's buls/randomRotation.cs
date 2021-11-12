@@ -5,26 +5,30 @@ using UnityEngine;
 public class randomRotation : MonoBehaviour
 {
     float timer;
-    public Material lightAng;
+    //public Material lightAng;
     float speed;
+    float amount;
+    Vector3 originalRotation;
 
     void Start()
     {
         timer = .5f;
         speed = 1;
+        amount = 1;
+        originalRotation = transform.localEulerAngles;
     }
 
     void Update()
     {
         if(timer < 0)
         {
-            transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, Random.Range(0, 360), 0);
+            transform.localEulerAngles = new Vector3(originalRotation.x + Random.Range(-amount, amount), originalRotation.y + Random.Range(-amount, amount), originalRotation.z + Random.Range(-amount, amount));
             timer = Random.Range(0.5f, 1.5f);
             speed = Random.Range(-2f, 2f);
+            amount += 1f;
         }
 
-        transform.localPosition += new Vector3(0, -50f * Input.GetAxis("Mouse Y") * Time.deltaTime, 0);
-        lightAng.SetVector("_LightDir", transform.localEulerAngles);
+       
         timer -= Time.deltaTime;
     }
 }

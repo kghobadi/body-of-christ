@@ -75,16 +75,19 @@ Shader "Hidden/Shader/ToonShadingPP"
         //float smoothRes = smoothstep(_Threshold, (1.0 - _Threshold), outColor);
         float brightness = smoothstep(_Threshold, (1.0 - _Threshold), hsvCol.b);
         //float hue = smoothstep(_Threshold, (1.0 - _Threshold), hsvCol.r);
-        //float sat = smoothstep(_Threshold, (1.0 - _Threshold), hsvCol.g);
+        float sat = smoothstep(_Threshold, (1.0 - _Threshold), hsvCol.g);
         //float dither4Col = Dither4x4Bayer(fmod(positionSS.x, 4), fmod(positionSS.y, 4));
         float ditherCol = Dither8x8Bayer(fmod(positionSS.x, 8), fmod(positionSS.y, 8));
+        float ditherSat = Dither8x8Bayer(fmod(positionSS.x, 8), fmod(positionSS.y, 8));
 
         ditherCol = step(ditherCol, brightness);
-        //float ditherHue = step(ditherCol, hue);
-        //float ditherSat = step(ditherCol, sat);
+        //ditherHue = step(ditherHue, hue);
+        ditherSat = step(ditherSat, sat);
         
         hsvCol.b = ditherCol;
-        //hsvCol.r = ditherHue;
+        //hsvCol.b = 1;
+        //hsvCol.r = 0;
+        hsvCol.g = ditherSat;
    
         outColor = HsvToRgb(hsvCol);
         //outColor = ditherCol;
