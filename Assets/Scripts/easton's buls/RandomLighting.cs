@@ -20,8 +20,8 @@ public class RandomLighting : MonoBehaviour
     {
         if (timer < 0)
         {
-            lite.enabled = !lite.enabled;
-            timer = 5f;
+            lite.intensity = Random.Range(150f, 900f);
+            timer = 1f;
             if(speed < 5) { speed += 0.5f; }
            
         }
