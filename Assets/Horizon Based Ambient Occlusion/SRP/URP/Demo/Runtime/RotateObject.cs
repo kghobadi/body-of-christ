@@ -4,6 +4,7 @@ namespace HorizonBasedAmbientOcclusion.Universal
 {
     public class RotateObject : MonoBehaviour
     {
+        [SerializeField] float speed =30;
         // Use this for initialization
         void Start()
         {
@@ -13,7 +14,7 @@ namespace HorizonBasedAmbientOcclusion.Universal
         // Update is called once per frame
         void Update()
         {
-            transform.Rotate(Vector3.up * Time.deltaTime * 15.0f, Space.World);
+            transform.Rotate(Vector3.up * Time.deltaTime * speed, Space.World);
         }
     }
 }

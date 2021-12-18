@@ -25,9 +25,9 @@ public class LightPlacer : MonoBehaviour
 
         while(lifetimes.Count > 0)
         {
-            foreach(float life in lifetimes)
+            for(int i = 0; i < lifetimes.Count; i++)
             {
-                
+
             }
         }
     }
