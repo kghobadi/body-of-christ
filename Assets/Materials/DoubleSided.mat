@@ -7,21 +7,25 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: black-thin-vertical-hand-drawn-stripes-white-seamless-vector-background-texture-hand-drawn-doodle-lines-black-thin-vertical-131636018
-  m_Shader: {fileID: -6465566751694194690, guid: 4c1e7da094afc9247b799725dde806fc,
+  m_Name: DoubleSided
+  m_Shader: {fileID: -6465566751694194690, guid: 2661cade1e5d9a946bbcc28ceab8e3f2,
     type: 3}
   m_ShaderKeywords: _ALPHATEST_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_273c260f001c4c959a99744d20975c8b:
+        m_Texture: {fileID: 2800000, guid: bb6aa96c1c763684e9d6c1ae890e3c82, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 3c0b296966d1a9f4b91e9ad363655d8a, type: 3}
+        m_Texture: {fileID: 2800000, guid: bb6aa96c1c763684e9d6c1ae890e3c82, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -45,7 +49,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3c0b296966d1a9f4b91e9ad363655d8a, type: 3}
+        m_Texture: {fileID: 2800000, guid: bb6aa96c1c763684e9d6c1ae890e3c82, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -77,13 +81,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Boolean_5ecf86a6133e4a83ac019de658be41c2: 0
     - _AlphaClip: 1
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _Cull: 2
-    - _Cutoff: 0.977
+    - _Cull: 0
+    - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -104,12 +109,13 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - Color_4e5fa9a2012d472680dd3ca522bd3b90: {r: 0, g: 1, b: 0, a: 0}
+    - _BaseColor: {r: 0.9747988, g: 1, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &6414091124553925357
+--- !u!114 &3107604881661150627
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
