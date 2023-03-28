@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScalingCube : MonoBehaviour
+public class LightDetection : MonoBehaviour
 {
     [Serializable]
     public class LightSource
@@ -14,13 +14,10 @@ public class ScalingCube : MonoBehaviour
     }
 
     [SerializeField]
-    private float _speed;
+    public List<LightSource> _lightSources;
 
     [SerializeField]
-    private List<LightSource> _lightSources;
-
-    [SerializeField]
-    private bool _spotted;
+    public bool _spotted;
 
     protected void Update()
     {
@@ -33,7 +30,7 @@ public class ScalingCube : MonoBehaviour
                 //just check direction from pos
                 RaycastHit hit;
                 Vector3 testPos = Vector3.zero;
-                Vector3 dir = _light.posi.transform.forward * 20f;
+                Vector3 dir = _light.posi.transform.forward * 50f;
                 //Debug.DrawRay(_light.posi.transform.position, dir, Color.black);
 
                 testPos = transform.position - dir;
@@ -83,7 +80,7 @@ public class ScalingCube : MonoBehaviour
              }
              else
              {
-
-             }*/
+                    transform.localScale -= Vector3.up * _speed;
+            }*/
         }
     }
