@@ -16,6 +16,9 @@ public sealed class Dither : PostProcessEffectSettings
 
     [Range(0,1), Tooltip("Width Amount")]
     public FloatParameter width = new FloatParameter { value = 0 };
+
+    //public Texture text;
+    public TextureParameter ditherPattern = new TextureParameter { value = null };
 }
 
 public sealed class DitherRenderer : PostProcessEffectRenderer<Dither>

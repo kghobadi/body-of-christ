@@ -51,8 +51,8 @@
 
             float3 newoffset = float3((1.0 / _ScreenParams.x), (1.0 / _ScreenParams.y), _Amount);
 
-            float4 col = SobelSamplePixel(_MainTex, i.texcoord, newoffset);
-            col = step(_Width, col.r);
+            //float4 col = SobelSamplePixel(_MainTex, i.texcoord, newoffset);
+           // col = step(_Width, col.r);
             //uv.x *= _Blend;
             //uv.y *= _Blend;
             //uv.x = round(uv.x);
@@ -60,7 +60,7 @@
             //uv.x /= _Blend;
             //uv.y /= _Blend;
 //float col = step(ditherValue, texColor);
-            return col;
+            return texColor;
             //return step(0.2, lum); 
             //float4 color = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.texcoord);
             //float luminance = dot(color.rgb, float3(0.2126729, 0.7151522, 0.0721750));

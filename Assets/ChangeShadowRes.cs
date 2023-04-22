@@ -14,9 +14,9 @@ public class ChangeShadowRes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = Random.RandomRange(0f, .98f);
-        float y = Random.RandomRange(x, .99f);
-        float z = Random.RandomRange(y, 1f);
-        QualitySettings.shadowCascade4Split = shade;
+        //float x = Random.RandomRange(0f, .98f);
+       // float y = Random.RandomRange(x, .99f);
+       // float z = Random.RandomRange(y, 1f);
+       // QualitySettings.shadowCascade4Split = shade;
     }
 }
